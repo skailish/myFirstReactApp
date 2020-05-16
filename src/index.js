@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "clase_72_tips/App";
+import App from "siGit/App";
 // import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
