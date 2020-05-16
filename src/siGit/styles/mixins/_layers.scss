@@ -1,0 +1,3 @@
+@mixin getLayer($element) {
+  z-index: map-get($layers, $element);
+}

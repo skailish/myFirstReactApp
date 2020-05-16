@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# ARCHIVOS QUE NO QUIERO QUE SE VAYAN
+/src/clase_70
+/src/clase_70_ejercicios
+/src/clase_71
+/src/clase_71_ejercicio
+/src/clase_72_tips
+/src/clase_73_tips
+/src/clase_74_oocss

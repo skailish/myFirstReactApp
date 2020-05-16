@@ -1,0 +1,3 @@
+@mixin getFontFamily($textType) {
+  font-family: map-get($fonts, $textType);
+}

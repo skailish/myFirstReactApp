@@ -1,0 +1,8 @@
+@mixin getColor($type, $spec) {
+  @if $type == "text" {
+    color: map-deep-get($colors, "text", $spec);
+  }
+  @if $type == "background" {
+    background-color: map-deep-get($colors, "background", $spec);
+  }
+}
