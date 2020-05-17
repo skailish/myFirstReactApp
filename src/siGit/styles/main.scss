@@ -1,14 +1,25 @@
-@import "styles/base/_reset.scss";
+@import "base/reset.scss";
 
-@import "styles/mixins/_colors.scss";
-@import "styles/mixins/_helpers.scss";
+@import "mixins/breakPoints.scss";
+@import "mixins/colors.scss";
+@import "mixins/fontFamily.scss";
+@import "mixins/helpers.scss";
+@import "mixins/icons.scss";
+@import "mixins/layers.scss";
+@import "mixins/text.scss";
 
-@import "styles/variables/_colors.scss";
-@import "styles/variables/_fonts.scss";
-@import "styles/variables/_helpers.scss";
-@import "styles/variables/_icons.scss";
-@import "styles/variables/_spacing.scss";
-@import "styles/variables/_text.scss";
+@import "variables/breakPoints.scss";
+@import "variables/colors.scss";
+@import "variables/fontFamily.scss";
+@import "variables/helpers.scss";
+@import "variables/icons.scss";
+@import "variables/layers.scss";
+@import "variables/text.scss";
 
-@import "styles/functions/_colors.scss";
-@import "styles/functions/_helpers.scss";
+@import "functions/breakPoints.scss";
+@import "functions/colors.scss";
+@import "functions/fontFamily.scss";
+@import "functions/helpers.scss";
+@import "functions/icons.scss";
+@import "functions/layers.scss";
+@import "functions/text.scss";

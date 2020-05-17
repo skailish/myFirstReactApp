@@ -1,0 +1,14 @@
+// propiedades básicas de text o heading
+@mixin getPropFontBase($type) {
+  @if map-has-key($font-base, $type) {
+    $attributes: map-get($font-base, $type);
+
+    @include getPropColor($type);
+    font-family: map-get($fontFamily, $type);
+    font-size: map-get($attributes, "size");
+    font-weight: map-get($attributes, "weight");
+    text-decoration: map-get($attributes, "decoration");
+  } @else {
+    @warn 'No existe el tipo: #{$type} en #{$font-base}. Las key son: #{map-keys($map: $font-base)}';
+  }
+}

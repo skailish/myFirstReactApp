@@ -1,22 +1,46 @@
 /*
-Error: File to import not found or unreadable: styles/base/_reset.scss.
-       Load path: C:/Users/Gualeguaychu2015/Google Drive/====CAPACITACIONES/ADA/react.js/clase_70_ENADELANTE_CRA/test_de_entorno/src/siGit/styles
-        on line 1 of C:\Users\Gualeguaychu2015\Google Drive\====CAPACITACIONES\ADA\react.js\clase_70_ENADELANTE_CRA\test_de_entorno\src\siGit\styles\main.scss
+Error: Invalid CSS after "  font-size": expected ";", was ": map-get($attr..."
+        on line 6 of C:/Users/Gualeguaychu2015/Google Drive/====CAPACITACIONES/ADA/react.js/clase_70_ENADELANTE_CRA/test_de_entorno/src/siGit/styles/mixins/_text.scss
+        from line 9 of C:\Users\Gualeguaychu2015\Google Drive\====CAPACITACIONES\ADA\react.js\clase_70_ENADELANTE_CRA\test_de_entorno\src\siGit\styles\main.scss
 
-1: @import "styles/base/_reset.scss";
-2: 
-3: @import "styles/mixins/_colors.scss";
-4: @import "styles/mixins/_helpers.scss";
-5: 
-6: @import "styles/variables/_colors.scss";
+1: // propiedades básicas de text o heading
+2: @mixin getBase($type) {
+3:   $attributes: map-get($font-base, $type);
+4: 
+5:   font-family: map-get($fonts, $type)
+6:   font-size: map-get($attributes, "size");
+7:   font-weight: map-get($attributes, "weight");
+8:   text-decoration: map-get($attributes, "decoration");
+9: }
 
 Backtrace:
-C:\Users\Gualeguaychu2015\Google Drive\====CAPACITACIONES\ADA\react.js\clase_70_ENADELANTE_CRA\test_de_entorno\src\siGit\styles\main.scss:1
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/Users/Gualeguaychu2015/Google Drive/====CAPACITACIONES/ADA/react.js/clase_70_ENADELANTE_CRA/test_de_entorno/src/siGit/styles/mixins/_text.scss:6
+C:\Users\Gualeguaychu2015\Google Drive\====CAPACITACIONES\ADA\react.js\clase_70_ENADELANTE_CRA\test_de_entorno\src\siGit\styles\main.scss:9
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:804:in `block in try_declaration'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `call'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:246:in `mixin_directive'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -49,4 +73,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: styles/base/_reset.scss.\A        Load path: C:/Users/Gualeguaychu2015/Google Drive/====CAPACITACIONES/ADA/react.js/clase_70_ENADELANTE_CRA/test_de_entorno/src/siGit/styles\A         on line 1 of C:\Users\Gualeguaychu2015\Google Drive\====CAPACITACIONES\ADA\react.js\clase_70_ENADELANTE_CRA\test_de_entorno\src\siGit\styles\main.scss\A \A 1: @import \"styles/base/_reset.scss\";\A 2: \A 3: @import \"styles/mixins/_colors.scss\";\A 4: @import \"styles/mixins/_helpers.scss\";\A 5: \A 6: @import \"styles/variables/_colors.scss\";"; }
+  content: "Error: Invalid CSS after \"  font-size\": expected \";\", was \": map-get($attr...\"\A         on line 6 of C:/Users/Gualeguaychu2015/Google Drive/====CAPACITACIONES/ADA/react.js/clase_70_ENADELANTE_CRA/test_de_entorno/src/siGit/styles/mixins/_text.scss\A         from line 9 of C:\Users\Gualeguaychu2015\Google Drive\====CAPACITACIONES\ADA\react.js\clase_70_ENADELANTE_CRA\test_de_entorno\src\siGit\styles\main.scss\A \A 1: // propiedades básicas de text o heading\A 2: @mixin getBase($type) {\A 3:   $attributes: map-get($font-base, $type);\A 4: \A 5:   font-family: map-get($fonts, $type)\A 6:   font-size: map-get($attributes, \"size\");\A 7:   font-weight: map-get($attributes, \"weight\");\A 8:   text-decoration: map-get($attributes, \"decoration\");\A 9: }"; }

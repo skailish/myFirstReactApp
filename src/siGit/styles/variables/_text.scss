@@ -1,0 +1,28 @@
+$font-sizes: (
+  small: 12px,
+  medium: 14px,
+  large: 16px,
+  x-large: 18px,
+  xx-large: 20px,
+);
+
+$font-weight: (
+  light: 100,
+  normal: 400,
+  bold: 900,
+);
+
+$font-base: (
+  text: (
+    color: map-get($colors, "p"),
+    size: map-get($font-sizes, "medium"),
+    weight: map-get($font-weight, "normal"),
+    decoration: "none",
+  ),
+  heading: (
+    color: map-get($colors, "heading"),
+    size: map-get($font-sizes, "x-large"),
+    weight: map-get($font-weight, "bold"),
+    decoration: "none",
+  ),
+);
