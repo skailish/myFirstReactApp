@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "siGit/App";
+import App from "siGit/App.js";
+import "siGit/styles/main.scss";
 // import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(

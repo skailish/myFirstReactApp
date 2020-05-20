@@ -1,8 +1,9 @@
 import React from "react";
-import Icon from "siGit/components/Icon/Icon";
 import style from "./button.module.scss";
+import Icon from "../Icon/Icon.js";
 
-const Button = (iconLeft, iconRight, variant, rounded = "square", children) => {
+const Button = ({ iconLeft, iconRight, variant, rounded = "square", children }) =>
+{
   const COLORS = {
     primary: "blue",
     default: "black",

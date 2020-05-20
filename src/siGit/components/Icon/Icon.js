@@ -8,7 +8,8 @@ const ICONS = {
   react: FaReact,
 };
 
-const Icon = (name, size, color) => {
+const Icon = ({ name, size, color }) =>
+{
   const SelectedIcon = ICONS[name];
   return <SelectedIcon style={{ fontSize: size, color: color }} />;
 };
