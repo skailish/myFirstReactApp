@@ -1,7 +1,0 @@
-@mixin getPropColor($type) {
-  color: getColor($type);
-}
-
-@mixin getPropBg($type) {
-  background-color: getColor($type);
-}

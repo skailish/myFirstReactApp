@@ -1,7 +1,0 @@
-@function getColor($type) {
-  @if map-has-key($colors, $type) {
-    @return map-get($colors, $type);
-  } @else {
-    @warn 'No existe el tipo #{$type} en #{$colors}';
-  }
-}
