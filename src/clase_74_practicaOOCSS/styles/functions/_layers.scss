@@ -1,0 +1,7 @@
+@function getLayer($element) {
+  @if map-has-key($layers, $element) {
+    @return map-get($layers, $element);
+  } @else {
+    @warn 'No existe el elemento #{$element} en #{$layers}';
+  }
+}

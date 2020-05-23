@@ -1,0 +1,3 @@
+@mixin getPropLayer($element) {
+  z-index: getLayer($element);
+}

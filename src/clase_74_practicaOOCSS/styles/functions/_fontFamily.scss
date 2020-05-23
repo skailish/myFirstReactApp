@@ -1,0 +1,7 @@
+@function getFontFamily($type) {
+  @if map-has-key($fontFamily, $type) {
+    @return map-get($fontFamily, $type);
+  } @else {
+    @warn 'No existe el tipo #{$type} en #{$fontFamily}';
+  }
+}
