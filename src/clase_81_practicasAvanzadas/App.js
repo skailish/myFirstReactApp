@@ -1,5 +1,6 @@
 import React from "react"
 import useArray from "./hooks/useArray"
+import useInput from "./hooks/useInput"
 
 const data = [
   {
@@ -20,11 +21,15 @@ const data = [
 ]
 
 const App = () => {
-  const [items, methods] = useArray(data)
+  const [value, update, clear] = useInput()
 
   return (
     <>
-      <ul>
+      <input value={value} onChange={update} />
+      <button onClick={clear}>Borra Todo</button>
+      <p>{value}</p>
+
+      {/* <ul>
         {items.map((item) => (
           <li>{JSON.stringify(item)}</li>
         ))}
@@ -39,7 +44,7 @@ const App = () => {
         }
       >
         Agregar
-      </button>
+      </button> */}
     </>
   )
 }
